@@ -1,3 +1,4 @@
+# See Brian's example: https://cdn.cs50.net/web/2018/spring/lectures/4/src4/airline5/
 from flask_sqlalchemy import SQLAlchemy
 
 db = SQLAlchemy()
