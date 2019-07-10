@@ -9,7 +9,7 @@ db.init_app(app)
 
 
 def main():
-    # add some dogs
+    # add some dogs! Make up some of your own.
     fido = Dog(name='fido', breed='golden', age=1)
     rover = Dog(name='rover', breed='lab', age=5)
 
