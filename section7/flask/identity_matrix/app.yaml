@@ -1,0 +1,27 @@
+runtime: python
+runtime_config:
+  python_version: 3
+env: flex
+entrypoint: gunicorn -t 3600 -b :$PORT application:app
+
+# Cutting costs with scaling parameters
+# manual_scaling:
+#   instances: 1
+
+automatic_scaling:
+  max_num_instances: 1
+
+
+
+resources:
+  cpu: 1
+  memory_gb: 0.6
+  disk_size_gb: 10
+
+env_variables:
+  FLASK_APP: 'application.py'
+  NCBI_KEY: 'c6f3b7bc35ccdc24be8085465541748ce408'
+
+handlers:
+  - url: /.*
+    script: auto

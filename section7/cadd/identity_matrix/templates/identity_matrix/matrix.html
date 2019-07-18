@@ -1,0 +1,22 @@
+{% extends "identity_matrix/layout.html" %}
+
+{% block title %}
+CDoT CADD - Identity Matrix Results
+{% endblock %}
+
+{% block body %}
+    <div class="row">
+        {{ matrix | safe }}
+    </div>
+    <br><br>
+    <div class="row">
+        <div class="col">
+            <form>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary" id="download"
+                        onclick="exportTableToCSV('identity_matrix.csv')">Download CSV file</button>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}

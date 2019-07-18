@@ -1,0 +1,9 @@
+biopython
+flask
+flask_session
+gunicorn
+numpy
+pandas
+requests
+urllib3
+xmltramp2

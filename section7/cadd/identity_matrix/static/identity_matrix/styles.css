@@ -1,0 +1,18 @@
+.mono, td, th {
+  font-family: Roboto Mono;
+  font-weight: bolder;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+th a {
+  color: black;
+}
+th a:hover {
+  color: silver;
+}
+
+/*# sourceMappingURL=styles.css.map */

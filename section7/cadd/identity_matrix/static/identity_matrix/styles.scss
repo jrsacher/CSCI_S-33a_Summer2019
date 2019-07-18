@@ -1,0 +1,25 @@
+$mono: Roboto Mono;
+
+.mono {
+    font-family: $mono;
+    font-weight: bolder;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+th {
+    @extend .mono;
+    a {
+        color: black;
+        &:hover {
+            color: silver;
+        }
+    }
+}
+
+td {
+    @extend .mono
+}
